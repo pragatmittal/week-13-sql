@@ -8,7 +8,6 @@ async function createTable() {
             password VARCHAR(255) NOT NULL
         );
     `;
-
     const client = await getClient();
 
     await client.query(createUserTableQuery);
